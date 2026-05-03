@@ -2,9 +2,8 @@ import Article from "./Article";
 
 function ArticleList(props) {
   return (
-    <section>
+    <main>
       <h2>Articles</h2>
-
       {props.articles.map((article) => (
         <Article
           key={article.id}
@@ -13,7 +12,7 @@ function ArticleList(props) {
           preview={article.preview}
         />
       ))}
-    </section>
+    </main>
   );
 }
 
